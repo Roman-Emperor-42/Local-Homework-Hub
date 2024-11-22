@@ -3,8 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 # Initialize Flask app and configure PostgreSQL database
+# put your postgres password wher <PASSWORD> is
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:H4nKVNGAzeyqemZWk4XC@localhost:5432/homework_hub'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:<PASSWORD>@localhost:5432/homework_hub'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
